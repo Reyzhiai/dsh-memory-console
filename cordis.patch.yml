@@ -1,0 +1,5 @@
+# 记忆管理台：Host 半注册 /api/memory.rpc 通道，Client 半注册侧栏图标与主区域页面。
+# row id 与包名相同（dsh-memory-console）；Cordis 只要求 id 在 profile 里唯一。
+- insert:
+    - id: dsh-memory-console
+      name: dsh-memory-console

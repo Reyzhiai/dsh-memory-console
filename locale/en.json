@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Memory Console",
+    "description": "Browse, edit, create and delete long-term memory: rendered Markdown reading, diff before save, automatic backups, index rebuild, full-text search, health checks and trash restore."
+  }
+}

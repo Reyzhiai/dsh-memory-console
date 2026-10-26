@@ -1,0 +1,11 @@
+# runtime state — 每台机器自己的清单，不进仓库
+required-files.json
+config.json
+
+# 依赖与临时文件
+node_modules/
+pnpm-lock.yaml
+package-lock.json
+*.log
+.DS_Store
+Thumbs.db

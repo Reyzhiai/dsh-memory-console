@@ -1,0 +1,50 @@
+{
+  "name": "dsh-memory-console",
+  "version": "0.5.0",
+  "type": "module",
+  "description": "Memory console for DeepSeek Harness: a Web page to browse, edit, create, search and health-check a folder of Markdown memory files, plus an editable required-files list injected into the system prompt every turn.",
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "memory",
+    "markdown",
+    "knowledge-base"
+  ],
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "handlers.js",
+    "settings.js",
+    "client.js",
+    "cordis.patch.yml",
+    "config.example.json",
+    "locale/*.json",
+    "icon.svg",
+    "assets/*.png",
+    "README.md",
+    "LICENSE"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=20"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-locale",
+        "@deepseek-ai/dsh-client-ui-layout",
+        "@deepseek-ai/dsh-client-ui-sidebar"
+      ]
+    }
+  }
+}
